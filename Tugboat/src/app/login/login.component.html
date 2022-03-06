@@ -3,12 +3,12 @@
         <h1>Welcome to Tugboat</h1>
         <p>Please Login to Start the ship..</p>
         <div class="loginform">
-            <form>
+            <form #loginform="ngForm" (ngSubmit)="login(loginform);">
                 <div class="mb-3">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" name="username" ngModel>
                 </div>
                 <div class="mb-3">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" ngModel>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
