@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+  }
+  .bg {
+    /* The image used */
+    background-image: url("../../assets/images/boat_back.jpg");
+  
+    /* Full height */
+    height: 650px;
+    text-align: center;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  #bgok {
+    padding: 100px 0;
+  }
+  .loginform{
+    width: 200px;
+    margin: auto;
+  }
